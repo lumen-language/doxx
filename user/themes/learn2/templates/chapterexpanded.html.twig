@@ -1,0 +1,13 @@
+{% extends 'docs.html.twig' %}
+
+{% block content %}
+	<div id="chapter">
+    	<div id="body-inner">
+			{{ page.content }}
+
+			{% for child in page.children %}
+				{{ child.content }}
+			{% endfor %}
+		</div>
+    </div>
+{% endblock %}

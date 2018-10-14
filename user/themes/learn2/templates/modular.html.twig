@@ -1,0 +1,17 @@
+
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content }}
+
+    {% set editorIds = [] %}
+
+    {% for module in page.collection %}
+
+        {{ module.content }}
+
+    {% endfor %}
+
+    {% include 'partials/mirror_bottom_scripts.html.twig' %}
+
+{% endblock %}

@@ -1,0 +1,362 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"out",
+				"outputIds"
+			],
+			[
+				"co",
+				"colorizeStroke"
+			],
+			[
+				"astrona",
+				"astronautScale"
+			],
+			[
+				"res",
+				"restaurantRef"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "Package Control: inst",
+		"selected_items":
+		[
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/03.advanced",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/03.advanced/01.adv-topic-1",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/_advanced",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/_tryout",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/css",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/css-compiled",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/fonts",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/modular",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials"
+	],
+	"file_history":
+	[
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/css/themeOverrides.css",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/mirror_bottom_scripts.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/base.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/fonts/Novecentosanswide-Light.otf",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/css/railscasts.css",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/.gitignore",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/css/editor.css",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/modular/mirror.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/modular.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/_advanced/mirror.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/_tryout/mirror.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/modular.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/mirror_styles.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/css-compiled/main.css",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/scss/theme/_main.scss",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/scss.sh",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/scss/main.scss",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/scss/theme.scss",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/scss/nucleus.scss",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/mirror_docs.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/system/config/site.yaml",
+		"/Users/emily/arc-tiefighter/index.html",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/03.advanced/chapter.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/docs.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/04.tutorials/chapter.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/01.basics/chapter.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/01.basics/02.requirements/01.sub-topic/docs.md",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/index.html",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/mirror.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/compiled-scripts.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/analytics.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/logo.html.twig",
+		"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/pages/01.basics/02.requirements/01.sub-topic/01.sub-sub-topic/docs.md",
+		"/Users/emily/playground-rhgtdemx/techio.yml",
+		"/Users/emily/arc-docs/website/siteConfig.js",
+		"/Users/emily/playground-rhgtdemx/markdowns/part2.md",
+		"/Users/emily/playground-rhgtdemx/markdowns/welcome.md",
+		"/Users/emily/arc-tiefighter/node/test/parallel/test-http-client-response-domain.js",
+		"/Users/emily/hacktoberfest/index.html",
+		"/Users/emily/node/test/parallel/test-http-client-response-domain.js",
+		"/Users/emily/mobileapp/android/app/src/main/java/com/medean/MainApplication.java",
+		"/Users/emily/mobileapp/android/settings.gradle",
+		"/Users/emily/mobileapp/android/build.gradle",
+		"/Users/emily/Downloads/medean_ios_assets/dottedRing.svg",
+		"/Users/emily/mobileapp/.env",
+		"/Users/emily/react-native-interactable/package.json",
+		"/Users/emily/mobileapp/lib/package.json",
+		"/Users/emily/react-native-interactable/lib/src/InteractableView.js",
+		"/Users/emily/Downloads/medean_ios_assets/drawerclose.svg",
+		"/Users/emily/Downloads/medean_ios_assets/draweropen.svg",
+		"/Users/emily/jubilee-client/src/now/layouts/Dashboard/Dashboard.jsx",
+		"/Users/emily/jubilee-client/src/now/routes/index.jsx",
+		"/Users/emily/jubilee-client/package.json",
+		"/Users/emily/jubilee-client/src/now/routes/dashboard.jsx",
+		"/Users/emily/keystone/package.json",
+		"/Users/emily/jubilee-webapp/package.json",
+		"/Users/emily/jubilee-webapp/.babelrc",
+		"/Users/emily/Downloads/jubilee-44a7d-export.json",
+		"/Users/emily/Downloads/jubilee-client/src/jubilee/modules/core/components/TruncatedText/presenter.jsx",
+		"/Users/emily/NealForMayor/package.json",
+		"/Users/emily/mobileapp/.gitignore",
+		"/Users/emily/mobileapp/package.json",
+		"/Users/emily/jubilee-webapp/web/modules/router/components/MemberRoutes/presenter.jsx",
+		"/Users/emily/jubilee-webapp/web/modules/router/components/Routes/presenter.jsx",
+		"/Users/emily/Downloads/jubilee-client/package.json",
+		"/Users/emily/Downloads/jubilee-client/config/webpack.config.dev.js",
+		"/Users/emily/jubilee-webapp/web/modules/router/constants.js",
+		"/Users/emily/Downloads/uncategorized -test.svg",
+		"/Users/emily/Downloads/Uncategorized (2).svg",
+		"/Users/emily/Downloads/Factor/Utilities.svg",
+		"/Users/emily/Downloads/Personal.svg",
+		"/Users/emily/Downloads/Factor/Fee.svg",
+		"/Users/emily/Downloads/Factor/Shopping.svg",
+		"/Users/emily/Downloads/Factor/Subscription.svg",
+		"/Users/emily/Downloads/Factor/Refund.svg",
+		"/Users/emily/Downloads/Factor/Postage-Shipping.svg",
+		"/Users/emily/Downloads/Factor/Other.svg",
+		"/Users/emily/Downloads/Factor/Office.svg",
+		"/Users/emily/Downloads/Factor/Loan.svg",
+		"/Users/emily/Downloads/Factor/Insurance.svg",
+		"/Users/emily/Downloads/Factor/Housing.svg",
+		"/Users/emily/Downloads/Factor/Groceries.svg",
+		"/Users/emily/Downloads/Factor/DiningOut.svg",
+		"/Users/emily/Downloads/Factor/Entertainment.svg",
+		"/Users/emily/Downloads/Factor/Electronics.svg",
+		"/Users/emily/Downloads/Factor/Education.svg",
+		"/Users/emily/Downloads/Factor/Card.svg",
+		"/Users/emily/Downloads/Factor/Charity.svg",
+		"/Users/emily/Downloads/Factor/Internet 2.svg",
+		"/Users/emily/Downloads/Factor/Transportation.svg",
+		"/Users/emily/Downloads/Factor/Travel.svg",
+		"/Users/emily/webapp/webpack.config.base.js",
+		"/Users/emily/jubilee-webapp/web/modules/auth/components/Auth/presenter.jsx",
+		"/Users/emily/Downloads/jubilee-client/src/now/index.js",
+		"/Users/emily/Downloads/jubilee-client/src/jubilee/store/index.js",
+		"/Users/emily/Downloads/jubilee-client/src/now/routes/index.jsx",
+		"/Users/emily/Downloads/jubilee-client/src/jubilee/main/index.js",
+		"/Users/emily/jubilee-webapp/index.js",
+		"/Users/emily/jubilee-webapp/.env",
+		"/Users/emily/jubilee-webapp/webpack.config.js",
+		"/Users/emily/jubilee-webapp/README.md",
+		"/Users/emily/Downloads/now-ui-dashboard-react-v1.1.0/public/index.html",
+		"/Users/emily/Downloads/now-ui-dashboard-react-v1.1.0/package.json",
+		"/Users/emily/mobileapp/app/modules/core/layouts/App/presenter.jsx",
+		"/Users/emily/Downloads/medean_svg/Airplane.svg",
+		"/Users/emily/mobileapp/app/modules/core/screens/Overview/presenter.jsx",
+		"/Users/emily/mobileapp/app/modules/navigator/components/BaseNavigator/presenter.jsx",
+		"/Users/emily/mobileapp/app/modules/core/components/Buttons/CloseBack/types.js",
+		"/Users/emily/mobileapp/app/modules/core/components/Buttons/CloseBack/presenter.jsx",
+		"/Users/emily/mobileapp-updae-rn/package.json",
+		"/Users/emily/mobileapp-updae-rn/.babelrc",
+		"/Users/emily/mobileapp/app/modules/core/components/ScoreGroupDrillDown/presenter.jsx",
+		"/Users/emily/mobileapp-updae-rn/rn-cli.config.js",
+		"/Users/emily/react-native/RNTester/README.md",
+		"/Users/emily/react-native/package.json",
+		"/Users/emily/mobileapp/app/modules/router/components/Routes/presenter.jsx",
+		"/Users/emily/mobileapp/app/modules/router/constants.js",
+		"/Users/emily/webapp/api/services/messageQueue/messageQueueService.js",
+		"/Users/emily/mobileapp/index.js",
+		"/Users/emily/mobileapp/app/modules/core/components/Graph/LineChartComponents/Points/presenter.jsx",
+		"/Users/emily/mobileapp/app/modules/core/components/Graph/NetworthChart/presenter.jsx",
+		"/Users/emily/mobileapp/app/modules/core/components/Graph/LineChartComponents/YAxis/presenter.jsx",
+		"/private/var/folders/w2/cwf723v93dv89vmp7tcwffzm0000gp/T/app_modules_core_components_Graph_NetworthChart_presenter_Before_aa145ce3a526b96ddaf7b856465df61d038ff93c.jsx",
+		"/Users/emily/mobileapp/app/modules/core/components/Graph/LineChartComponents/XAxis/presenter.jsx",
+		"/private/var/folders/w2/cwf723v93dv89vmp7tcwffzm0000gp/T/app_modules_core_components_Graph_LineChartComponents_YAxis_presenter_Before_aa145ce3a526b96ddaf7b856465df61d038ff93c.jsx",
+		"/private/var/folders/w2/cwf723v93dv89vmp7tcwffzm0000gp/T/app_modules_core_components_Graph_LineChartComponents_XAxis_presenter_Before_aa145ce3a526b96ddaf7b856465df61d038ff93c.jsx",
+		"/private/var/folders/w2/cwf723v93dv89vmp7tcwffzm0000gp/T/app_modules_core_components_Graph_LineChartComponents_Points_presenter_Before_aa145ce3a526b96ddaf7b856465df61d038ff93c.jsx",
+		"/Users/emily/mobileapp/app/modules/core/components/Graph/BudgetChart/presenter.jsx"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates",
+			"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2",
+			"/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/scss",
+			"/Users/emily/Downloads/grav-skeleton-rtfm-site"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/user/themes/learn3",
+			"\"),",
+			"/user/themes/learn3/fonts/Novecentosanswide-UltraLight-webfont.eot",
+			"Novec",
+			"wrap",
+			"Novace",
+			"theme",
+			"#output",
+			"#cmEditor",
+			"mirror_styles",
+			".editor",
+			".wrapper",
+			"3rem",
+			"5rem",
+			"3rem",
+			".padding",
+			"def render"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/user/themes/learn2",
+			"/user/themes/learn2/fonts/Novecentosanswide-Light.otf"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "grav.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 361.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

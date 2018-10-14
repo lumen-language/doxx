@@ -1,0 +1,198 @@
+<script>
+
+var editorElements = document.querySelectorAll('.cmEditor');
+var outputElements = document.querySelectorAll('.cmOutput');
+var editorIds = [];
+var outputIds = [];
+
+editorElements.forEach((el) => {
+  if (el.id) editorIds.push(el.id);
+});
+
+outputElements.forEach((el) => {
+  if (el.id) outputIds.push(el.id);
+});
+
+for (var i = 0; i < editorIds.length; i++) {
+  bindEditorAndOutput(editorIds[i], outputIds[i]);
+}
+
+function bindEditorAndOutput(editorId, outputId) {
+  console.log(editorId, outputId);
+  if (!editorId || !outputId) return;
+
+  $('#' + editorId).bind('focusout', function(e) {
+    if(!isValid($(this).val())) {
+      e.preventDefault();
+      $(this).focus();
+    }
+  });
+
+  // http://stackoverflow.com/questions/14501185/detect-windows-vs-mac-os
+  var OSName="unk";
+  if (navigator.appVersion.indexOf("Win")!=-1) OSName="win";
+  else if (navigator.appVersion.indexOf("Mac")!=-1) OSName="mac";
+  else if (navigator.appVersion.indexOf("X11")!=-1) OSName="nix";
+  else if (navigator.appVersion.indexOf("Linux")!=-1) OSName="nux";
+
+  function getURL(url, c) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("get", url, true);
+    xhr.send();
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState != 4) return;
+      if (xhr.status < 400) return c(null, xhr.responseText);
+      var e = new Error(xhr.responseText || "No response");
+      e.status = xhr.status;
+      c(e);
+    };
+  }
+
+  function hotkey(e) {
+    console.log(e);
+  }
+
+
+    function enter() { alert("eval"); }
+    function save() { 
+      var text = $('#' + editorId).val();
+      var results = ac(text);
+      var str = string(results);
+
+      $('#' + outputId).text(str); }
+
+  function clear() {
+    $('#' + outputId).text(""); 
+  }
+
+  function readstrsafe(s) {
+  var x = (function () { try { return [true, readstr(s)]; } catch (_e1) {  return([false, _e1.message]); }})();
+
+  return x[1];
+  }
+  function save() { 
+
+    var text = editor.doc.getValue();
+    var exprs = ac(readstrsafe(text)); 
+
+    var o = ""; 
+    map(function (x) { 
+      var ok = x[1];
+      if (!ok) {
+
+      }
+      // o += string(x[0]); o += "\n";
+      o += string(x[2]); o += "\n";
+      //o += "\n"; 
+
+  }, exprs);
+
+      //$("#output").append(o); 
+      writeOutput(o);
+
+   }
+
+
+  var server;
+  // getURL("http://ternjs.net/defs/ecma5.json", function(err, code) {
+  //   if (err) throw new Error("Request for ecma5.json: " + err);
+  //   server = new CodeMirror.TernServer({defs: [JSON.parse(code)]});
+
+
+  //   editor.setOption("extraKeys", {
+  //     "Ctrl-Space": function(cm) { 
+  //       server.complete(cm); },
+  //     "Ctrl-I": function(cm) { 
+  //       server.showType(cm); },
+  //     "Ctrl-O": function(cm) { 
+  //       server.showDocs(cm); },
+  //     "Alt-.": function(cm) { 
+  //       server.jumpToDef(cm); },
+  //     "Alt-,": function(cm) { 
+  //       server.jumpBack(cm); },
+  //     "Ctrl-Q": function(cm) { 
+  //       server.rename(cm); },
+  //     "Ctrl-.": function(cm) { 
+  //       server.selectName(cm); },
+  //     "Cmd-S": function(cm) { 
+  //       save(); },
+  //     "Ctrl-S": function(cm) { 
+  //       save(); },
+  //     "Cmd-Enter": function(cm) { 
+  //       enter(); },
+  //     "Ctrl-Enter": function(cm) { 
+  //       enter(); },
+  //     // Tab: function(e) {
+  //     //   var IndentWithTabs = true;
+  //     //   IndentWithTabs ? e.execCommand("defaultTab") : e.somethingSelected() ? e.indentSelection("add") : e.execCommand("insertSoftTab")
+
+  //     // }
+  //     Tab: function(cm) {
+  //       var spaces = Array(cm.getOption("indentUnit") + 1).join(" ");
+  //       cm.replaceSelection(spaces);
+  //     }
+  //   })
+  //   editor.on("cursorActivity", function(cm) { server.updateArgHints(cm); });
+  // });
+
+  var editor = CodeMirror.fromTextArea(document.getElementById(editorId), {
+    lineNumbers: true,
+    mode: "clojure",
+    theme: "railscasts",
+    tabSize: 2,
+    smartIndent: false,
+    autoCloseBrackets: false,
+    matchBrackets: true,
+    gutters: ["gutter-variableVals", "CodeMirror-linenumbers", "breakpoints"],
+    showCursorWhenSelecting: true,
+    scrollbarStyle: null,
+    autofocus: true
+    /*onKeyEvent: function (e, s) {
+
+      hotkey($.event.fix(s));
+      if (s.type == "keyup") {
+          save();
+          CodeMirror.showHint(e);
+      }
+    }*/
+  });
+  //if gutter is clicked, set a breakpoint at that line
+  editor.on("gutterClick", function(cm, n) {
+      var info = cm.lineInfo(n);
+    cm.setGutterMarker(n, "breakpoints", info.gutterMarkers ? null : makeMarker());
+  });
+
+  typed = now();
+  setInterval(function() {
+    if (typed && ms_since(typed) > 300) {
+      typed = null;
+      save();
+    }
+  }, 200);
+
+  editor.on('keyup', function(){
+      //CodeMirror.commands.autocomplete(editor);
+      typed = now();
+  });
+
+
+  //creates html element for breakpoint
+  function makeMarker() {
+    var marker = document.createElement("div");
+    marker.style.color = "rgb(163, 21, 80)";
+    marker.innerHTML = "●";
+    return marker;
+  };
+
+  function writeOutput(text) {
+  //  var text = editor.doc.getValue();
+  CodeMirror.runMode(text, "clojure", document.getElementById(outputId));
+  //document.getElementById("output").textContent = text;
+  };
+
+  $(function() {
+    save();
+  });
+}
+
+</script>
