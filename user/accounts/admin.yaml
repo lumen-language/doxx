@@ -1,0 +1,11 @@
+email: emkolar+admin@gmail.com
+fullname: admin
+title: admin
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$0em2DaNpHt0kS7N217W2duefpS/AcLs.liMPJweLGRfJGqDR4OQRq
