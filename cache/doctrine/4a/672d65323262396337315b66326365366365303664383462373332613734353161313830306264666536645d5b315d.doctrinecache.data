@@ -1,0 +1,34 @@
+1540148369
+a:2:{s:7:"content";s:848:"<div class="interactive-section">
+
+  <h3>
+    Advanced Things
+  </h3>
+
+  <p>
+    <p>If you want to be a true ninja, you absolutely must do this.</p>
+  </p>
+
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+  	<!-- ; To enable key repeat on OS X, run this terminal command: -->
+  	<!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+  	<!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorAdvanced" id="cmEditorAdvanced" cols="30" class="cmEditor">
+
+  ; these are equivalent.
+  (def make-adder (n) (fn (_) (+ _ n)))
+  (def make-adder (n) [+ _ n])
+
+  (def add2 (make-adder 2))
+  (add2 40)
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputAdvanced" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>";s:12:"content_meta";N;}

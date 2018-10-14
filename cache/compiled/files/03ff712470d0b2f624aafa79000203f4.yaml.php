@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emily/Downloads/grav-skeleton-rtfm-site/user/config/system.yaml',
-    'modified' => 1539542773,
+    'modified' => 1539543557,
     'data' => [
         'home' => [
             'alias' => '/basics'

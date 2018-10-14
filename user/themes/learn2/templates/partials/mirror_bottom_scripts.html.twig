@@ -5,17 +5,11 @@ var outputElements = document.querySelectorAll('.cmOutput');
 var editorIds = [];
 var outputIds = [];
 
-editorElements.forEach((el) => {
-  if (el.id) editorIds.push(el.id);
-});
+window.codeMirrors = [];
 
-outputElements.forEach((el) => {
-  if (el.id) outputIds.push(el.id);
+editorElements.forEach(function (el, index) {
+  bindEditorAndOutput(el.id, outputElements[index].id);
 });
-
-for (var i = 0; i < editorIds.length; i++) {
-  bindEditorAndOutput(editorIds[i], outputIds[i]);
-}
 
 function bindEditorAndOutput(editorId, outputId) {
   console.log(editorId, outputId);
@@ -70,28 +64,6 @@ function bindEditorAndOutput(editorId, outputId) {
 
   return x[1];
   }
-  function save() { 
-
-    var text = editor.doc.getValue();
-    var exprs = ac(readstrsafe(text)); 
-
-    var o = ""; 
-    map(function (x) { 
-      var ok = x[1];
-      if (!ok) {
-
-      }
-      // o += string(x[0]); o += "\n";
-      o += string(x[2]); o += "\n";
-      //o += "\n"; 
-
-  }, exprs);
-
-      //$("#output").append(o); 
-      writeOutput(o);
-
-   }
-
 
   var server;
   // getURL("http://ternjs.net/defs/ecma5.json", function(err, code) {
@@ -146,7 +118,7 @@ function bindEditorAndOutput(editorId, outputId) {
     gutters: ["gutter-variableVals", "CodeMirror-linenumbers", "breakpoints"],
     showCursorWhenSelecting: true,
     scrollbarStyle: null,
-    autofocus: true
+    autofocus: false
     /*onKeyEvent: function (e, s) {
 
       hotkey($.event.fix(s));
@@ -156,17 +128,47 @@ function bindEditorAndOutput(editorId, outputId) {
       }
     }*/
   });
+
+  window.codeMirrors.push(editor);
+  
+  function save(idx) { 
+
+    if (window.codeMirrors.length - 1 < idx) return;
+    if (!window.codeMirrors[idx]) return;
+
+    var text = window.codeMirrors[idx].getValue();
+    var exprs = ac(readstrsafe(text)); 
+
+    var o = ""; 
+    map(function (x) { 
+      var ok = x[1];
+      if (!ok) {
+
+      }
+      // o += string(x[0]); o += "\n";
+      o += string(x[2]); o += "\n";
+      //o += "\n"; 
+
+  }, exprs);
+
+      //$("#output").append(o); 
+      writeOutput(o, idx);
+
+   }
   //if gutter is clicked, set a breakpoint at that line
   editor.on("gutterClick", function(cm, n) {
       var info = cm.lineInfo(n);
     cm.setGutterMarker(n, "breakpoints", info.gutterMarkers ? null : makeMarker());
   });
 
+
   typed = now();
   setInterval(function() {
     if (typed && ms_since(typed) > 300) {
       typed = null;
-      save();
+      save(0);
+      save(1);
+      save(2);
     }
   }, 200);
 
@@ -184,9 +186,9 @@ function bindEditorAndOutput(editorId, outputId) {
     return marker;
   };
 
-  function writeOutput(text) {
+  function writeOutput(text, idx) {
   //  var text = editor.doc.getValue();
-  CodeMirror.runMode(text, "clojure", document.getElementById(outputId));
+  CodeMirror.runMode(text, "clojure", outputElements[idx]);
   //document.getElementById("output").textContent = text;
   };
 
