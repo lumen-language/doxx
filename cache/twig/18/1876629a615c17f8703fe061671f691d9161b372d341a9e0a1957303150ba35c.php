@@ -106,6 +106,6 @@ class __TwigTemplate_a64c7d9a05063b0e79e8b3dccfad3e88524c34504007c0c293cb50ef04e
     {% include 'partials/mirror_bottom_scripts.html.twig' %}
 
 {% endblock %}
-", "modular.html.twig", "/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/modular.html.twig");
+", "modular.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/modular.html.twig");
     }
 }

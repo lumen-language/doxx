@@ -50,6 +50,6 @@ class __TwigTemplate_902358194d5f27b3a73b981f3f9780ea843eb25ace7f566f8f949862431
     public function getSourceContext()
     {
         return new Twig_Source("<a class=\"github-link\" href=\"{{ theme_config.github.tree ~  ('/'~page.filePathClean)|replace({'/user/':''}) }}\"><i class=\"fa fa-github-square\"></i> {{ 'THEME_LEARN2_GITHUB_EDIT_THIS_PAGE'|t }}</a>
-", "partials/github_link.html.twig", "/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/github_link.html.twig");
+", "partials/github_link.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/partials/github_link.html.twig");
     }
 }

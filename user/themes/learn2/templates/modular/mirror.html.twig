@@ -1,13 +1,4 @@
 <div class="interactive-section">
-
-  <h3>
-    {{ page.title }}
-  </h3>
-
-  <p>
-    {{ page.content }}
-  </p>
-
   <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
     <div class="editor">
   	<!-- ; To enable key repeat on OS X, run this terminal command: -->
@@ -15,12 +6,7 @@
   	<!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
   <textarea name="{{ page.header.editorId }}" id="{{ page.header.editorId }}" cols="30" class="cmEditor">
 
-  ; these are equivalent.
-  (def make-adder (n) (fn (_) (+ _ n)))
-  (def make-adder (n) [+ _ n])
-
-  (def add2 (make-adder 2))
-  (add2 40)
+  {{ page.content|escape }}
 
   </textarea>
     </div>

@@ -62,6 +62,6 @@ class __TwigTemplate_ecee76903395a74951901f2c59e9b45b3294d6f2d9f9d8dfef65d29d462
            data-search-input=\"{{ base_url_relative }}/search.json/query\"/>
     <span data-search-clear><i class=\"fa fa-close\"></i></span>
 </div>
-", "partials/search.html.twig", "/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/search.html.twig");
+", "partials/search.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/partials/search.html.twig");
     }
 }

@@ -17,46 +17,29 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
     {
         // line 1
         echo "<div class=\"interactive-section\">
-
-  <h3>
-    ";
-        // line 4
-        echo $this->getAttribute(($context["page"] ?? null), "title", array());
-        echo "
-  </h3>
-
-  <p>
-    ";
-        // line 8
-        echo $this->getAttribute(($context["page"] ?? null), "content", array());
-        echo "
-  </p>
-
   <div class=\"wrapper\"> <!-- wrapper in charge of layout resizing -->
     <div class=\"editor\">
   \t<!-- ; To enable key repeat on OS X, run this terminal command: -->
   \t<!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
   \t<!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
   <textarea name=\"";
-        // line 16
+        // line 7
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "editorId", array());
         echo "\" id=\"";
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "editorId", array());
         echo "\" cols=\"30\" class=\"cmEditor\">
 
-  ; these are equivalent.
-  (def make-adder (n) (fn (_) (+ _ n)))
-  (def make-adder (n) [+ _ n])
-
-  (def add2 (make-adder 2))
-  (add2 40)
+  ";
+        // line 9
+        echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "content", array()));
+        echo "
 
   </textarea>
     </div>
 
     <div class=\"CodeMirror cm-s-default output\">
         <pre id=\"";
-        // line 29
+        // line 15
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "outputId", array());
         echo "\" class=\"cmOutput\"></pre>
     </div>
@@ -77,7 +60,7 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
 
     public function getDebugInfo()
     {
-        return array (  60 => 29,  42 => 16,  31 => 8,  24 => 4,  19 => 1,);
+        return array (  43 => 15,  34 => 9,  27 => 7,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -91,15 +74,6 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"interactive-section\">
-
-  <h3>
-    {{ page.title }}
-  </h3>
-
-  <p>
-    {{ page.content }}
-  </p>
-
   <div class=\"wrapper\"> <!-- wrapper in charge of layout resizing -->
     <div class=\"editor\">
   \t<!-- ; To enable key repeat on OS X, run this terminal command: -->
@@ -107,12 +81,7 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
   \t<!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
   <textarea name=\"{{ page.header.editorId }}\" id=\"{{ page.header.editorId }}\" cols=\"30\" class=\"cmEditor\">
 
-  ; these are equivalent.
-  (def make-adder (n) (fn (_) (+ _ n)))
-  (def make-adder (n) [+ _ n])
-
-  (def add2 (make-adder 2))
-  (add2 40)
+  {{ page.content|escape }}
 
   </textarea>
     </div>
@@ -122,6 +91,6 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
     </div>
   </div>
 
-</div>", "modular/mirror.html.twig", "/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/modular/mirror.html.twig");
+</div>", "modular/mirror.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/modular/mirror.html.twig");
     }
 }

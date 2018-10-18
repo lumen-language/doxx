@@ -1,0 +1,20 @@
+1540435373
+a:2:{s:7:"content";s:646:"<div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+  	<!-- ; To enable key repeat on OS X, run this terminal command: -->
+  	<!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+  	<!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorTryout" id="cmEditorTryout" cols="30" class="cmEditor">
+
+  &lt;p&gt;Something something, here&#039;s how to do!&lt;/p&gt;
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputTryout" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>";s:12:"content_meta";N;}

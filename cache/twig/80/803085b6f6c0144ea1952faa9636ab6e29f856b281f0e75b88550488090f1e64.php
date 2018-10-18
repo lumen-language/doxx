@@ -437,6 +437,6 @@ function bindEditorAndOutput(editorId, outputId) {
   });
 }
 
-</script>", "partials/mirror_bottom_scripts.html.twig", "/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/mirror_bottom_scripts.html.twig");
+</script>", "partials/mirror_bottom_scripts.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/partials/mirror_bottom_scripts.html.twig");
     }
 }

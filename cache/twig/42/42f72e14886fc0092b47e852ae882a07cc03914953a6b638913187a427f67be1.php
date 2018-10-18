@@ -82,6 +82,6 @@ class __TwigTemplate_f1fab9585d908f80c990272c0ab6500423e26ba23b55c4dea71f4aa8638
         return new Twig_Source("{% for meta in page.metadata %}
 <meta {% if meta.name %}name=\"{{ meta.name }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "/Users/emily/Downloads/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/metadata.html.twig");
+", "partials/metadata.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/partials/metadata.html.twig");
     }
 }

@@ -1,0 +1,30 @@
+1540435323
+a:2:{s:7:"content";s:818:"
+    <p>Every piece of code in Lumen is an expression, and expressions can be evaluated to give values. Lumen has a few kinds of expressions that evaluate to themselves:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroExpCode" id="cmEditorIntroExpCode" cols="30" class="cmEditor">
+
+  17
+-5e4
+true
+false
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroExpCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}
