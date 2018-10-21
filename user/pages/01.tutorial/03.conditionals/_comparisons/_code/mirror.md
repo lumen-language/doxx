@@ -8,6 +8,6 @@ twig_first: true
 editorId: cmEditorCondCompCode
 outputId: outputCondCompCode
 ---
-(if true 10 20)
-(if false 10 20)
-(+ (if false 10 20) 5)
+(= 10 10)
+(if (= 10 10) "yes")
+(if (= 10 "no") "yes")

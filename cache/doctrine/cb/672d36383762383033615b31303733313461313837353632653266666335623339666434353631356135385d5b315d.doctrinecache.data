@@ -1,0 +1,35 @@
+1540698845
+a:2:{s:7:"content";s:1215:"
+    <p>Lists contain other values, and are written by enclosing expressions in parentheses. Operators are called by placing them at the beginning of a list expression, and list values can be constructed using the <code>list</code> operator.</p>
+<p>Note that values identified by name, known as keys, don't show up in any particular order.</p>
+<p>Lists can contain values that are identified by their position, as well as values that are identified in the list by a name:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroListsCode" id="cmEditorIntroListsCode" cols="30" class="cmEditor">
+
+  (+ 10 2)
+(abs -10)
+(/ 128 2 2 2)
+(list 1 2 3 4)
+
+(at (list 1 2 3) 1)
+(get (list a: 10 b: 20) &quot;b&quot;)
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroListsCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}

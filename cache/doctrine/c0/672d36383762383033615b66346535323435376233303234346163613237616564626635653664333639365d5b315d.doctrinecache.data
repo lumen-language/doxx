@@ -1,0 +1,28 @@
+1540699307
+a:2:{s:7:"content";s:812:"
+    <p>A function's parameter list can contain both positional and key parameters, where the key's value is the name to bind:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorFuncParamsCode" id="cmEditorFuncParamsCode" cols="30" class="cmEditor">
+
+  (let f (fn (a b: my-b) (+ a my-b))
+  (f 13 b: 2))
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputFuncParamsCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}

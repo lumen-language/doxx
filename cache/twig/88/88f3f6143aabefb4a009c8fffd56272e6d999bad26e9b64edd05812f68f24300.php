@@ -38,7 +38,7 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
     </div>
 
     <div class=\"CodeMirror cm-s-default output\">
-        <pre id=\"";
+<pre id=\"";
         // line 15
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "outputId", array());
         echo "\" class=\"cmOutput\"></pre>
@@ -87,7 +87,7 @@ class __TwigTemplate_f8ae898ab84ea3205ee484c2c737532bc1caebf26ad5ada7a771c26b1fb
     </div>
 
     <div class=\"CodeMirror cm-s-default output\">
-        <pre id=\"{{ page.header.outputId }}\" class=\"cmOutput\"></pre>
+<pre id=\"{{ page.header.outputId }}\" class=\"cmOutput\"></pre>
     </div>
   </div>
 

@@ -14,4 +14,4 @@ content:
             - _code
 ---
 
-Conditional evaluation is done using an `if` expression. The value of an `if` expression is that of the branch whose condition evaluated to `true`:
+Comparing values is done using the `=` operator:

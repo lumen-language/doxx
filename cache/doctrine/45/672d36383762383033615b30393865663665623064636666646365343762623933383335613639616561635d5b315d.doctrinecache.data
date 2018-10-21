@@ -1,0 +1,160 @@
+1540698845
+a:2:{s:7:"content";s:4459:"
+    <h2>Introduction</h2>
+
+    
+        
+    <p>Every piece of code in Lumen is an expression, and expressions can be evaluated to give values. Lumen has a few kinds of expressions that evaluate to themselves:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroExpCode" id="cmEditorIntroExpCode" cols="30" class="cmEditor">
+
+  17
+-5e4
+true
+false
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroExpCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+
+
+    
+        
+    <p>Strings are enclosed in quotation marks, and may contain newlines. Special characters are escaped using a backslash:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroStringsCode" id="cmEditorIntroStringsCode" cols="30" class="cmEditor">
+
+  &quot;hi there&quot;
+&quot;one
+two&quot;
+&quot;a\&quot;b&quot;
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroStringsCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+
+
+    
+        
+    <p><code>nil</code> represents nothingness, and it isn't printed back at the command line:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroNilCode" id="cmEditorIntroNilCode" cols="30" class="cmEditor">
+
+  nil
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroNilCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+
+
+    
+        
+    <p>Comments start with <code>;</code> and continue through the rest of the line:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroCommentsCode" id="cmEditorIntroCommentsCode" cols="30" class="cmEditor">
+
+  7 ; everyone&#039;s favourite
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroCommentsCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+
+
+    
+        
+    <p>Lists contain other values, and are written by enclosing expressions in parentheses. Operators are called by placing them at the beginning of a list expression, and list values can be constructed using the <code>list</code> operator.</p>
+<p>Note that values identified by name, known as keys, don't show up in any particular order.</p>
+<p>Lists can contain values that are identified by their position, as well as values that are identified in the list by a name:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorIntroListsCode" id="cmEditorIntroListsCode" cols="30" class="cmEditor">
+
+  (+ 10 2)
+(abs -10)
+(/ 128 2 2 2)
+(list 1 2 3 4)
+
+(at (list 1 2 3) 1)
+(get (list a: 10 b: 20) &quot;b&quot;)
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputIntroListsCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+
+
+    
+";s:12:"content_meta";N;}

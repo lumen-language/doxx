@@ -1,0 +1,31 @@
+1540698692
+a:2:{s:7:"content";s:987:"
+    <p>A different way to unquote expressions is <code>unquote-splicing</code>, which takes the values contained in a nested list and places them in the enclosing one.</p>
+<p>The shorthand for <code>unquote-splicing</code> is <code>,@</code>.</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorQuoteUnspliceCode" id="cmEditorQuoteUnspliceCode" cols="30" class="cmEditor">
+
+  (let a &#039;(1 2 3)
+  (quasiquote (9 8 (unquote-splicing a))))
+(let a &#039;(1 2 3)
+  `(9 8 ,@a))
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputQuoteUnspliceCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}

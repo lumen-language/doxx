@@ -12,6 +12,8 @@ content:
         custom:
             - _if
             - _branches
+            - _comparisons
+            - _lists
 ---
 
 ## Conditionals

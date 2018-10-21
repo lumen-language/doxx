@@ -1,0 +1,17 @@
+---
+title: Shorthand
+published: true
+visible: true
+body_classes: 'modular header-image fullwidth'
+menu: Shorthand
+onpage_menu: false
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc
+        custom:
+            - _code
+---
+
+The shorthand for quotation is use a single quote:

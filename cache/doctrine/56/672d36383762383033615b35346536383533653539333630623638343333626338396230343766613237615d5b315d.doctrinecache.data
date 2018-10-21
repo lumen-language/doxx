@@ -1,0 +1,32 @@
+1540698692
+a:2:{s:7:"content";s:926:"
+    <p>Quoting names and strings results in strings that would evaluate to the quoted expression.</p>
+<p>This is also true for expressions inside lists.</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorQuoteStrListCode" id="cmEditorQuoteStrListCode" cols="30" class="cmEditor">
+
+  (quote a)
+(quote &quot;hereanother&quot;)
+(quote &quot;two\nlines&quot;)
+(quote (a b c))
+(quote (1 2 b: baz z: &quot;frob&quot;))
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+        <pre id="outputQuoteStrListsCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}
