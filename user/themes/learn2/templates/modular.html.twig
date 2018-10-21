@@ -14,11 +14,22 @@
 
     {% set next = page.header.next %}
 
-    {% if page.header.next != false %}
-        <a style="width: 100%; display: inline-block; text-align: right;" href="/tutorial/{{ page.header.next }}">
-        Next: {{ page.header.next_text }} &rangle;
-        </a>
-    {% endif %}
+    <div class="nextPrevWrapper">
+        {% if page.header.prev != false %}
+            <a class="prev" href="/tutorial{{ page.header.prev }}">
+                &langle; Previous: {{ page.header.prev_text }}
+            </a>
+        {% else %}
+            <span></span>
+        {% endif %}
+        {% if page.header.next != false %}
+            <a class="next" href="/tutorial{{ page.header.next }}">
+                Next: {{ page.header.next_text }} &rangle;
+            </a>
+        {% else %}
+            <span></span>
+        {% endif %}
+    </div>
 
     {% include 'partials/mirror_bottom_scripts.html.twig' %}
 

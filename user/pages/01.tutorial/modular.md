@@ -5,6 +5,7 @@ onpage_menu: true
 body_classes: "modular header-image fullwidth"
 next: variables
 next_text: Variables
+prev: false
 
 content:
     items: '@self.modular'

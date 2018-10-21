@@ -3,8 +3,10 @@ title: Functions
 menu: Functions
 onpage_menu: true
 body_classes: "modular header-image fullwidth"
-next: destructuring
+next: /destructuring
 next_text: Destructuring
+prev: /conditionals
+prev_text: Conditionals
 
 content:
     items: '@self.modular'

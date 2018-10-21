@@ -3,8 +3,10 @@ title: Quoting
 menu: Quoting
 onpage_menu: true
 body_classes: "modular header-image fullwidth"
-next: macros
+next: /macros
 next_text: Macros
+prev: /iteration
+prev_text: Iteration
 
 content:
     items: '@self.modular'
