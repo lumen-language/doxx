@@ -3,6 +3,8 @@ title: Iteration
 menu: Iteration
 onpage_menu: true
 body_classes: "modular header-image fullwidth"
+next: quotation
+next_text: Quotation
 
 content:
     items: '@self.modular'

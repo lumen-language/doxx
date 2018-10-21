@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/emily/doxx/user/config/system.yaml',
-    'modified' => 1540093889,
+    'modified' => 1540096240,
     'data' => [
         'home' => [
             'alias' => '/basics'

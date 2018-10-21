@@ -98,7 +98,7 @@ class __TwigTemplate_5f18f454a0261083421d595a25f2d2ef8318375551d5b0c75d17a08212e
             var name = readSym(stream);
             if (name == \".\") return null;
             type = \"symbol\";
-            if (name == \"nil\" || name == \"t\" || name.charAt(0) == \":\") return \"atom\";
+            if (name == \"nil\" || name == \"null\" || name == \"true\" || name == \"false\" || name == \"...\" || name.charAt(0) == \":\" || name.charAt(name.length - 1) == \":\") return \"atom\";
             if (state.lastType == \"open\" && (specialForm.test(name) || assumeBody.test(name))) return \"keyword\";
             if (name.charAt(0) == \"&\") return \"variable-2\";
             return \"variable\";
@@ -387,7 +387,8 @@ function bindEditorAndOutput(editorId, outputId) {
   });
 }
 
-</script>";
+</script>
+";
     }
 
     public function getTemplateName()
@@ -492,7 +493,7 @@ function bindEditorAndOutput(editorId, outputId) {
             var name = readSym(stream);
             if (name == \".\") return null;
             type = \"symbol\";
-            if (name == \"nil\" || name == \"t\" || name.charAt(0) == \":\") return \"atom\";
+            if (name == \"nil\" || name == \"null\" || name == \"true\" || name == \"false\" || name == \"...\" || name.charAt(0) == \":\" || name.charAt(name.length - 1) == \":\") return \"atom\";
             if (state.lastType == \"open\" && (specialForm.test(name) || assumeBody.test(name))) return \"keyword\";
             if (name.charAt(0) == \"&\") return \"variable-2\";
             return \"variable\";
@@ -781,6 +782,7 @@ function bindEditorAndOutput(editorId, outputId) {
   });
 }
 
-</script>", "partials/mirror_bottom_scripts.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/partials/mirror_bottom_scripts.html.twig");
+</script>
+", "partials/mirror_bottom_scripts.html.twig", "/Users/emily/doxx/user/themes/learn2/templates/partials/mirror_bottom_scripts.html.twig");
     }
 }

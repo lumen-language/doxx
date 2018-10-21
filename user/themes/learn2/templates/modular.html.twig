@@ -12,6 +12,14 @@
 
     {% endfor %}
 
+    {% set next = page.header.next %}
+
+    {% if page.header.next != false %}
+        <a style="width: 100%; display: inline-block; text-align: right;" href="/tutorial/{{ page.header.next }}">
+        Next: {{ page.header.next_text }} &rangle;
+        </a>
+    {% endif %}
+
     {% include 'partials/mirror_bottom_scripts.html.twig' %}
 
 {% endblock %}

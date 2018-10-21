@@ -58,8 +58,29 @@ class __TwigTemplate_a64c7d9a05063b0e79e8b3dccfad3e88524c34504007c0c293cb50ef04e
         echo "
     ";
         // line 15
-        $this->loadTemplate("partials/mirror_bottom_scripts.html.twig", "modular.html.twig", 15)->display($context);
+        $context["next"] = $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "next", array());
         // line 16
+        echo "
+    ";
+        // line 17
+        if (($this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "next", array()) != false)) {
+            // line 18
+            echo "        <a style=\"width: 100%; display: inline-block; text-align: right;\" href=\"/tutorial/";
+            echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "next", array());
+            echo "\">
+        Next: ";
+            // line 19
+            echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "next_text", array());
+            echo " &rangle;
+        </a>
+    ";
+        }
+        // line 22
+        echo "
+    ";
+        // line 23
+        $this->loadTemplate("partials/mirror_bottom_scripts.html.twig", "modular.html.twig", 23)->display($context);
+        // line 24
         echo "
 ";
     }
@@ -76,7 +97,7 @@ class __TwigTemplate_a64c7d9a05063b0e79e8b3dccfad3e88524c34504007c0c293cb50ef04e
 
     public function getDebugInfo()
     {
-        return array (  63 => 16,  61 => 15,  58 => 14,  49 => 11,  46 => 10,  42 => 9,  39 => 8,  37 => 7,  31 => 5,  28 => 4,  11 => 2,);
+        return array (  84 => 24,  82 => 23,  79 => 22,  73 => 19,  68 => 18,  66 => 17,  63 => 16,  61 => 15,  58 => 14,  49 => 11,  46 => 10,  42 => 9,  39 => 8,  37 => 7,  31 => 5,  28 => 4,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -102,6 +123,14 @@ class __TwigTemplate_a64c7d9a05063b0e79e8b3dccfad3e88524c34504007c0c293cb50ef04e
         {{ module.content }}
 
     {% endfor %}
+
+    {% set next = page.header.next %}
+
+    {% if page.header.next != false %}
+        <a style=\"width: 100%; display: inline-block; text-align: right;\" href=\"/tutorial/{{ page.header.next }}\">
+        Next: {{ page.header.next_text }} &rangle;
+        </a>
+    {% endif %}
 
     {% include 'partials/mirror_bottom_scripts.html.twig' %}
 

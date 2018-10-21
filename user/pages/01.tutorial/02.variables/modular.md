@@ -3,6 +3,8 @@ title: Variables
 menu: Variables
 onpage_menu: true
 body_classes: "modular header-image fullwidth"
+next: conditionals
+next_text: Conditionals
 
 content:
     items: '@self.modular'

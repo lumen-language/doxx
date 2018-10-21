@@ -1,0 +1,33 @@
+1540701114
+a:2:{s:7:"content";s:873:"
+    <p>The most common shortcut for defining functions is to use <code>define</code> and <code>define-global</code> in the following way:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorFuncDefCode" id="cmEditorFuncDefCode" cols="30" class="cmEditor">
+
+  (define-global f (n)
+  (* n 10))
+(f 3)
+(do (define f (n) (* n 10))
+    (print (f 3))
+    (print (f 4))
+    (f 2.5))
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+<pre id="outputFuncDefCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}

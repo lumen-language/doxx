@@ -1,0 +1,32 @@
+1540701117
+a:2:{s:7:"content";s:853:"
+    <p>Variables can be bound to values in a list at certain positions or key:</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorDestVarCode" id="cmEditorDestVarCode" cols="30" class="cmEditor">
+
+  (let ((a b c) (list 1 2 3))
+  b)
+((fn ((a b c)) c) (list 1 2 3))
+(let ((a b: my-b) (list 1 b: 2))
+  my-b)
+((fn ((a b: my-b)) (list a my-b)) (list 1 b: 2))
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+<pre id="outputDestVarCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}

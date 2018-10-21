@@ -1,0 +1,30 @@
+1540701121
+a:2:{s:7:"content";s:1077:"
+    <p>Variables are declared using <code>define</code> and <code>define-global</code>. Variables declared with <code>define</code> are available for use anywhere in subsequent expressions in the same scope, and <code>define-global</code> makes them globally available.</p>
+<p><code>do</code> evaluates multiple expressions, and itself evaluates to the value of the last expression.</p>
+
+    
+        <div class="interactive-section">
+  <div class="wrapper"> <!-- wrapper in charge of layout resizing -->
+    <div class="editor">
+    <!-- ; To enable key repeat on OS X, run this terminal command: -->
+    <!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
+    <!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
+  <textarea name="cmEditorVarsDefineCode" id="cmEditorVarsDefineCode" cols="30" class="cmEditor">
+
+  (define-global zzz &quot;ho&quot;)
+zzz
+(do (define x 10) (+ x 9))
+
+  </textarea>
+    </div>
+
+    <div class="CodeMirror cm-s-default output">
+<pre id="outputVarsDefineCode" class="cmOutput"></pre>
+    </div>
+  </div>
+
+</div>
+
+    
+";s:12:"content_meta";N;}

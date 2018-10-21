@@ -3,6 +3,8 @@ title: Destructuring
 menu: Destructuring
 onpage_menu: true
 body_classes: "modular header-image fullwidth"
+next: iteration
+next_text: Iteration
 
 content:
     items: '@self.modular'

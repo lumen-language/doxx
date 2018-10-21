@@ -3,6 +3,7 @@ title: Introduction
 menu: Introduction
 onpage_menu: true
 body_classes: "modular header-image fullwidth"
+next: variables
 
 content:
     items: '@self.modular'
