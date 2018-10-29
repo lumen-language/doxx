@@ -12,7 +12,6 @@ outputId: outputFuncParamsMoreCode
   (f))
 (let f (fn (b: b) (if (= b nil) 10 20))
   (f a: 99))
-
 (let f (fn xs (last xs))
   (f 1 2 3))
 (let f (fn (a rest: as) (+ a (last as)))

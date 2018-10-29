@@ -13,5 +13,5 @@ outputId: outputIterEachCode
 (each v (list 1 2 a: 10 b: 20) ; values only
   (print v))
 (each (k (a b)) ; destructuring
-    (list (list 10 20) bar: (list "a" "b"))
+  (list (list 10 20) bar: (list "a" "b"))
   (print (cat k " " a " " b)))
