@@ -13,8 +13,9 @@
       "use strict";
 
       CodeMirror.defineMode("commonlisp", function(config) {
-        var specialForm = /^(block|let*|return-from|catch|load-time-value|setq|eval-when|locally|symbol-macrolet|flet|macrolet|tagbody|function|multiple-value-call|the|go|multiple-value-prog1|throw|if|progn|unwind-protect|labels|progv|let|quote)$/;
-        var assumeBody = /^with|^def|^do|^prog|case$|^cond$|bind$|when$|unless$/;
+        var specialForm = /^(get|set|at|not|or|and|do|require|while|braek|error|throw|return|let|let-macro|let-symbol|let-unique|let-when|let-if|list|obj|quote|quasiquote|set-of|step|target|test|test=|unless|when|when-compiling|during-compilation|wipe|with|with-bindings|with-frame|with-indent|define|case|cat|cat!|class|dec|define|var|define-global|deifne-macro|def|mac|define-reader|define-special|define-symbol|define-test|each|export|fn|for|guard|if|inc|join|join!|language|[#%*+-/<=>]|[><=][=]|inf|%result|abs|acos|add|almost|apply|argv|asin|atan|atan2|atom[?]|bind|bind[*]|boolean[?]|bound[?]|call|cat|ceil|char|clip|code|compile|compile-function|cos|cut|drop|edge|empty[?]|environment|escape|eval|exit|expand-if|find|first|floor|function[?]|hd|id-literal[?]|hd[?]|in[?]|indent-level|indentation|inf|inf[?]|inner|join|keep|key|keys|keys[?]|last|load|log|log10|lower|macroexpand|map|mapo|max|min|nan|nan[?]|nil[?]|none[?]|number|number-code[?]|number[?]|numeric[?]|one[?]|pair|pow|print|quasiexpand|quoted|random|read-file|reduce|reserved[?]|reverse|run|search|setenv|sin|sinh|some[?]|sort|split|sqrt|stash|string|string-literal[?]|string[?]|tan|tanh|target|tl|toplevel[?]|two[?]|unstash|valid-id[?]|write|write-file)$/;
+        // var specialForm = /^(block|do|let*|return-from|catch|load-time-value|setq|eval-when|locally|symbol-macrolet|flet|macrolet|tagbody|function|multiple-value-call|the|go|multiple-value-prog1|throw|if|progn|unwind-protect|labels|progv|let|quote)$/;
+        var assumeBody = /^with|^def|case$|^cond$|bind$|let$|when$|unless$/;
         var numLiteral = /^(?:[+\-]?(?:\d+|\d*\.\d+)(?:[efd][+\-]?\d+)?|[+\-]?\d+(?:\/[+\-]?\d+)?|#b[+\-]?[01]+|#o[+\-]?[0-7]+|#x[+\-]?[\da-f]+)/;
         var symbol = /[^\s'`,@()\[\]";]/;
         var type;
@@ -283,7 +284,7 @@ function bindEditorAndOutput(editorId, outputId) {
     lineNumbers: true,
     mode: "commonlisp",
     theme: "railscasts",
-    tabSize: 2,
+    tabSize: 1,
     indentUnit: 2,
     smartIndent: true,
     autoCloseBrackets: true,
