@@ -1,15 +1,15 @@
 name: Learn2
 version: 1.7.0
-description: "Learn2 is a new modern documentation theme for Grav"
+description: "Lumen language docs site"
 icon: book
 author:
-  name: Team Grav
-  email: devs@getgrav.org
-  url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-theme-learn2
-demo: http://learn.getgrav.org
+  name: Team Grav & Emily Kolar
+  email: emkolar@gmail.com
+  url: https://github.com/lumen-language/lumen
+homepage: https://github.com/lumen-language/doxx/
+demo: https://github.com/lumen-language/doxx/
 keywords: heme, docs, modern, fast, responsive, html5, css3
-bugs: https://github.com/getgrav/grav-theme-learn2/issues
+bugs: https://github.com/lumen-language/doxx/issues
 license: MIT
 
 form:
@@ -29,7 +29,7 @@ form:
     home_url:
         type: text
         label: Home URL
-        placeholder: http://getgrav.org
+        placeholder: https://github.com/lumen-language/lumen
         validate:
           type: text
 
@@ -53,9 +53,9 @@ form:
     github.tree:
         type: text
         label: GitHub Tree
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
+        default: https://github.com/lumen-language/doxx/
 
     github.commits:
         type: text
         label: GitHub Commits
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/
+        default: https://github.com/lumen-language/doxx/commits/

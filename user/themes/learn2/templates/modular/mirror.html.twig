@@ -4,11 +4,7 @@
   	<!-- ; To enable key repeat on OS X, run this terminal command: -->
   	<!-- ; defaults write -g ApplePressAndHoldEnabled -bool false -->
   	<!-- ; See https://github.com/codemirror/CodeMirror/issues/1849 -->
-  <textarea name="{{ page.header.editorId }}" id="{{ page.header.editorId }}" cols="30" class="cmEditor">
-
-  {{ page.content|escape }}
-
-  </textarea>
+        <textarea name="{{ page.header.editorId }}" id="{{ page.header.editorId }}" cols="30" class="cmEditor">{{ page.content|escape }}</textarea>
     </div>
 
     <div class="CodeMirror cm-s-default output">

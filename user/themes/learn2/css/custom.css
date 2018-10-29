@@ -1,0 +1,8 @@
+#body .padding {
+    padding: 3rem 3rem !important;
+}
+
+.CodeMirror {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}

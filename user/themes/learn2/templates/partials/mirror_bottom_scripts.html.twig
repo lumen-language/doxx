@@ -283,14 +283,15 @@ function bindEditorAndOutput(editorId, outputId) {
     lineNumbers: true,
     mode: "commonlisp",
     theme: "railscasts",
-    tabSize: 2,
-    smartIndent: false,
-    autoCloseBrackets: false,
+    tabSize: 1,
+    indentUnit: 1,
+    smartIndent: true,
+    autoCloseBrackets: true,
     matchBrackets: true,
     gutters: ["gutter-variableVals", "CodeMirror-linenumbers", "breakpoints"],
     showCursorWhenSelecting: true,
     scrollbarStyle: null,
-    autofocus: false
+    autofocus: false,
     /*onKeyEvent: function (e, s) {
 
       hotkey($.event.fix(s));
@@ -359,9 +360,7 @@ function bindEditorAndOutput(editorId, outputId) {
   };
 
   function writeOutput(text, idx) {
-  //  var text = editor.doc.getValue();
-  CodeMirror.runMode(text, "clojure", outputElements[idx]);
-  //document.getElementById("output").textContent = text;
+    CodeMirror.runMode(text, "commonlisp", outputElements[idx]);
   };
 
   $(function() {
