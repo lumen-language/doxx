@@ -340,9 +340,9 @@ function bindEditorAndOutput(editorId, outputId) {
   setInterval(function() {
     if (typed && ms_since(typed) > 300) {
       typed = null;
-      save(0);
-      save(1);
-      save(2);
+      for (var i = 0; i < window.codeMirrors.length; i++) {
+        save(i);
+      }
     }
   }, 200);
 
