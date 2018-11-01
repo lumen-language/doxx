@@ -1,9 +1,9 @@
 {
-    "name": "getgrav/grav",
+    "name": "sctb/lumen",
     "type": "project",
-    "description": "Modern, Crazy Fast, Ridiculously Easy and Amazingly Powerful Flat-File CMS",
-    "keywords": ["cms","flat-file cms","flat cms","flatfile cms","php"],
-    "homepage": "http://getgrav.org",
+    "description": "A Lisp for Lua and JavaScript",
+    "keywords": [],
+    "homepage": "https://github.com/sctb/lumen",
     "license": "MIT",
     "require": {
         "php": ">=5.6.4",
